@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Menentukan encoding karakter untuk dokumen -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Membuat halaman responsif -->
+    <title>Putri - About Me</title> <!-- Judul halaman -->
+
+    <!-- Mengimpor font dari Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+    <style>
+        /* Gaya dasar untuk halaman */
+        body {
+            font-family: 'Roboto', sans-serif; /* Font utama */
+            background-color: #1a1f1a; /* Latar belakang gelap */
+            color: #e0e0e0; /* Warna teks terang */
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navigasi */
+        nav {
+            background-color: #29302a; /* Latar belakang navigasi */
+            text-align: center; /* Teks di tengah */
+            padding: 15px; /* Spasi dalam */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Efek bayangan */
+        }
+
+        nav ul {
+            list-style-type: none; /* Menghapus tanda bullet pada daftar */
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline; /* Daftar ditampilkan horizontal */
+            margin: 0 15px; /* Jarak antar item */
+        }
+
+        nav ul li a {
+            color: #a6d1a3; /* Warna teks tautan */
+            text-decoration: none; /* Menghapus garis bawah */
+            font-weight: bold; /* Teks tebal */
+            transition: color 0.3s; /* Efek transisi warna saat hover */
+            font-size: 20px; /* Ukuran teks */
+        }
+
+        nav ul li a:hover {
+            color: #ffffff; /* Warna teks saat hover */
+        }
+
+        /* Kontainer utama halaman */
+        .container {
+            width: 80%; /* Lebar kontainer */
+            margin: auto; /* Pusatkan kontainer */
+            padding: 10px; /* Spasi dalam */
+        }
+
+        /* Gaya untuk elemen judul */
+        h1, h2 {
+            color: #a6d1a3; /* Warna teks judul */
+            font-family: 'Montserrat', sans-serif; /* Font khusus untuk judul */
+        }
+
+        h1 {
+            text-align: center; /* Teks di tengah */
+            margin-bottom: 5px; /* Jarak bawah */
+            font-size: 36px; /* Ukuran besar untuk judul utama */
+        }
+
+        h2 {
+            margin-bottom: 5px; /* Jarak bawah untuk subjudul */
+            font-size: 24px; /* Ukuran lebih kecil */
+        }
+
+        /* Bagian profil */
+        .profile {
+            display: flex; /* Mengatur layout horizontal */
+            align-items: flex-start; /* Mengatur elemen berada di atas */
+            margin-bottom: 15px; /* Jarak bawah */
+        }
+
+        .profile img {
+            border-radius: 50%; /* Membuat gambar berbentuk lingkaran */
+            width: 150px; /* Lebar gambar */
+            height: 150px; /* Tinggi gambar */
+            margin-right: 15px; /* Jarak dengan teks */
+            border: 4px solid #6b8f6a; /* Bingkai pada gambar */
+        }
+
+        .profile-info {
+            max-width: 100%; /* Lebar maksimal konten */
+        }
+
+        p {
+            line-height: 1.6; /* Jarak antar baris teks */
+            color: #d0d0c5; /* Warna teks paragraf */
+            margin: 3px 0; /* Jarak atas dan bawah */
+            font-size: 18px; /* Ukuran font */
+        }
+
+        /* Kotak sorotan untuk teks */
+        .highlight-box {
+            background-color: #29302a; /* Latar belakang kotak */
+            padding: 10px; /* Spasi dalam */
+            margin: 5px 0; /* Jarak vertikal */
+            width: calc(100% - 30px); /* Menyesuaikan lebar */
+            overflow: hidden; /* Menyembunyikan konten berlebih */
+            border: 2px solid #6b8f6a; /* Bingkai kotak */
+            border-radius: 5px; /* Sudut melengkung */
+        }
+
+        .highlight-box p {
+            margin: 0; /* Menghapus margin default */
+            text-align: justify; /* Teks rata kiri dan kanan */
+            font-family: 'Roboto', sans-serif; /* Font untuk paragraf */
+            font-size: 16px; /* Ukuran font */
+        }
+
+        /* Footer */
+        footer {
+            text-align: center; /* Teks di tengah */
+            padding: 10px; /* Spasi dalam */
+            background-color: #29302a; /* Latar belakang footer */
+            color: #757575; /* Warna teks footer */
+            border-top: 2px solid #6b8f6a; /* Garis di atas footer */
+            font-size: 14px; /* Ukuran font */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header dengan navigasi -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li> <!-- Tautan ke Home -->
+                <li><a href="motivasi.html">Motivasi</a></li> <!-- Tautan ke Motivasi -->
+                <li><a href="contact.html">Contact</a></li> <!-- Tautan ke Contact -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Konten utama -->
+    <div class="container">
+        <h1>About Me</h1> <!-- Judul utama -->
+
+        <!-- Bagian profil -->
+        <div class="profile">
+            <img src="photo_2024.jpg" alt="Profile Picture"> <!-- Gambar profil -->
+            <div class="profile-info">
+                <h2>Nama : DIAN PUTRI DEWI</h2> <!-- Nama -->
+                <p>Domisili : Pakuniran, Probolinggo, Jawa Timur</p> <!-- Domisili -->
+                <p>Asal Sekolah : SMAN 1 BESUK</p> <!-- Sekolah asal -->
+                <p>Jurusan di Sekolah Asal : Ilmu Pengetahuan Alam (IPA)</p> <!-- Jurusan -->
+                
+                <!-- Kotak sorotan -->
+                <div class="highlight-box">
+                    <p>Nama saya biasa dipanggil Dian ataupun Putri. Saat ini, saya sedang menempuh pendidikan di Universitas Nurul Jadid (UNUJA) pada Program Studi Teknik Informatika, dan saya berada di semester 5. Selama kuliah, saya berkesempatan untuk menjalin banyak persahabatan dengan teman-teman baru. Saya juga aktif dalam beberapa organisasi, antara lain Himpunan Mahasiswa Teknik Informatika (HIMATIKA), Dewan Perwakilan Mahasiswa (DPM), serta organisasi eksternal, yaitu Himpunan Mahasiswa Islam (HMI). Keterlibatan dalam organisasi-organisasi ini memberikan saya pengalaman berharga dan kesempatan untuk mengembangkan diri.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            &copy; 2024 Putri. All rights reserved. <!-- Hak cipta -->
+        </footer>
+    </div>
+
+</body>
+</html>

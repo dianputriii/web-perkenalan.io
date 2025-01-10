@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Putri - Home</title>
+    <style>
+        /* Mengatur gaya dasar untuk halaman */
+        body {
+            font-family: 'Arial', sans-serif; /* Font utama dengan fallback sans-serif */
+            background-color: #1a1f1a; /* Warna latar belakang gelap */
+            color: #e0e0e0; /* Warna teks terang */
+            margin: 0; /* Menghapus margin default */
+            padding: 0; /* Menghapus padding default */
+        }
+
+        /* Bagian navigasi di atas halaman */
+        nav {
+            background-color: #29302a; /* Warna latar belakang untuk navigasi */
+            text-align: center; /* Pusatkan teks */
+            padding: 15px; /* Tambahkan jarak dalam navigasi */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Tambahkan bayangan */
+        }
+
+        nav ul {
+            list-style-type: none; /* Hilangkan bullet pada daftar */
+            padding: 0; /* Menghapus padding default */
+        }
+
+        nav ul li {
+            display: inline; /* Tampilkan elemen secara horizontal */
+            margin: 0 15px; /* Tambahkan jarak antar elemen */
+        }
+
+        nav ul li a {
+            color: #a6d1a3; /* Warna hijau terang */
+            text-decoration: none; /* Hilangkan garis bawah pada tautan */
+            font-weight: bold; /* Teks tebal */
+            transition: color 0.3s; /* Efek transisi warna saat hover */
+            font-size: 18px; /* Ukuran font tautan */
+        }
+
+        nav ul li a:hover {
+            color: #ffffff; /* Ubah warna menjadi putih saat hover */
+        }
+
+        /* Bagian hero utama di halaman */
+        .hero {
+            display: flex; /* Gunakan flexbox untuk tata letak */
+            align-items: center; /* Selaraskan elemen secara vertikal */
+            justify-content: center; /* Pusatkan elemen secara horizontal */
+            padding: 20px; /* Tambahkan padding */
+            background: linear-gradient(135deg, #1c241b, #2f4032); /* Gradien warna hijau gelap */
+            border-bottom: 4px solid #6b8f6a; /* Garis bawah berwarna hijau */
+        }
+
+        .hero-content {
+            max-width: 400px; /* Batasi lebar maksimal teks */
+            margin-right: 10px; /* Tambahkan jarak antara teks dan gambar */
+            text-align: left; /* Selaraskan teks ke kiri */
+        }
+
+        .hero h1 {
+            color: #a6d1a3; /* Warna teks hijau terang */
+            font-size: 3rem; /* Ukuran font besar */
+            margin-bottom: 10px; /* Tambahkan jarak bawah */
+        }
+
+        .hero p {
+            color: #d0d0c5; /* Warna teks abu-abu terang */
+            line-height: 1.4; /* Jarak antar baris teks */
+            font-size: 1.2rem; /* Ukuran font paragraf */
+        }
+
+        .hero-img {
+            width: 200px; /* Lebar gambar */
+            border-radius: 50%; /* Membuat gambar berbentuk lingkaran */
+            border: 5px solid #a6d1a3; /* Tambahkan border hijau */
+        }
+
+        .cta-button {
+            display: inline-block; /* Tampilkan sebagai elemen blok dalam baris */
+            padding: 10px 20px; /* Tambahkan padding pada tombol */
+            background-color: #6b8f6a; /* Warna latar tombol */
+            color: #fff; /* Warna teks putih */
+            text-decoration: none; /* Hilangkan garis bawah */
+            border-radius: 5px; /* Buat sudut tombol melengkung */
+            margin-top: 10px; /* Tambahkan jarak atas */
+            transition: background-color 0.3s; /* Efek transisi warna tombol */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Tambahkan bayangan */
+        }
+
+        .cta-button:hover {
+            background-color: #5a7c5a; /* Warna tombol saat hover */
+        }
+
+        /* Bagian footer */
+        footer {
+            text-align: center; /* Pusatkan teks */
+            padding: 20px; /* Tambahkan padding */
+            background-color: #29302a; /* Warna latar belakang gelap */
+            color: #757575; /* Warna teks abu-abu gelap */
+            border-top: 2px solid #6b8f6a; /* Garis atas berwarna hijau */
+            font-size: 14px; /* Ukuran font kecil */
+        }
+
+        /* Responsivitas untuk layar kecil */
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column; /* Ubah arah elemen menjadi vertikal */
+                text-align: center; /* Pusatkan teks */
+            }
+
+            .hero-content {
+                margin-right: 0; /* Hilangkan jarak kanan */
+            }
+
+            .hero-img {
+                margin: 10px 0 0 0; /* Tambahkan margin atas pada gambar */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header dengan navigasi -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="motivasi.html">Motivasi</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Bagian utama (Hero Section) -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>WELCOME.!!</h1>
+            <p>AYO!! kepoin beberapa hal tentang saya☻.</p>
+            <a href="about.html" class="cta-button">Learn More</a>
+        </div>
+        <img src="1720620761563.jpg" alt="Profile Picture" class="hero-img">
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 Putri. All rights reserved.
+    </footer>
+
+</body>
+</html>
